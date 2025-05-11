@@ -1,20 +1,20 @@
 import { Link } from "expo-router";
 import { Text, View } from "react-native";
 
-export default function Home() {
+export default function Products() {
   return (
     <View
       style={{
         flex: 1,
         justifyContent: "center",
         alignItems: "center",
-        gap: 16
+        gap: 16,
       }}
     >
-      <Text>Home Page</Text>
-      <Link href="/about">About</Link>
-      <Link href="/profile">Profile</Link>
-      <Link href="/products">Products</Link>
+      <Text>Products</Text>
+      <Link href="/products/1">Product 1</Link>
+      <Link href="/products/2">Product 2</Link>
+      <Link href="/products/3">Product 3</Link>
     </View>
   );
 }
